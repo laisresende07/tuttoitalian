@@ -41,7 +41,7 @@ const Logo = ({
         <Image
             src={SelectedLogo}
             alt="Tutto Italian Logo"
-            width={width}
+            width={isMobile ? width * 1.5 : width}
             className={className}
             priority
         />

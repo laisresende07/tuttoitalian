@@ -15,6 +15,7 @@
     color: var(--color-accent);
     letter-spacing: 1px;
 }
+
 .action {
     display: flex;
     width: 45%;
@@ -25,6 +26,62 @@
 
 .image {
     max-height: 500px;
+    max-width: 100%;
     object-fit: cover;
     object-position: top;
+}
+
+@media (max-width: 880px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        gap: 40px;
+    }
+
+    .label {
+        font-size: 18px !important;
+    }
+
+    .title {
+        width: 100%;
+
+        h1 {
+            font-size: 44px !important;
+        }
+    }
+
+    .lily {
+        margin-top: 8px;
+
+        position: relative;
+        display: inline-block;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 1px;
+            background-color: var(--color-accent);
+            transition: width 0.3s ease;
+        }
+    }
+
+    .action {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        gap: 24px;
+    }
+
+    .image {
+        width: 100%;
+        max-height: 150px;
+        margin-top: 16px;
+        object-fit: cover;
+    }
 }

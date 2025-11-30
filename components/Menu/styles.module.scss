@@ -13,10 +13,10 @@
     overflow: hidden;
     filter: grayscale(100%);
     transition: filter 0.4s ease;
+}
 
-    &:hover {
-        filter: grayscale(0%);
-    }
+.imageCard:hover {
+    filter: grayscale(0%);
 }
 
 .active {
@@ -41,7 +41,7 @@
 }
 
 .label {
-    margin-bottom: 12px;
+    margin-bottom: 12px !important;
     letter-spacing: 4px;
 }
 
@@ -54,10 +54,10 @@
     gap: 24px;
     align-items: center;
     margin-bottom: 40px;
+}
 
-    button:last-of-type {
-        margin-left: auto;
-    }
+.filterRow button:last-of-type {
+    margin-left: auto;
 }
 
 .filterButton {
@@ -70,34 +70,34 @@
     transition: color 0.3s ease;
     position: relative;
     display: inline-block;
+}
 
-    &:hover {
-        color: var(--color-accent);
-    }
+.filterButton:hover {
+    color: var(--color-accent);
+}
 
-    &::after {
-        content: "";
-        position: absolute;
-        bottom: -4px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 0;
-        height: 1px;
-        background-color: var(--color-accent);
-        transition: width 0.3s ease;
-    }
+.filterButton::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 1px;
+    background-color: var(--color-accent);
+    transition: width 0.3s ease;
+}
 
-    &:hover::after {
-        width: 50%;
-    }
+.filterButton:hover::after {
+    width: 50%;
 }
 
 .activeFilter {
     color: var(--color-accent);
+}
 
-    &::after {
-        width: 50%;
-    }
+.activeFilter::after {
+    width: 50%;
 }
 
 .listWrapper {
@@ -120,11 +120,15 @@
     transition: color 0.25s ease;
     cursor: pointer;
 
-    h4,
-    p,
-    span {
-        transition: color 0.25s ease;
+    &:last-of-type {
+        border: none;
     }
+}
+
+.dishItem h4,
+.dishItem p,
+.dishItem span {
+    transition: color 0.25s ease;
 }
 
 .dishItem:hover h4,
@@ -137,4 +141,85 @@
 .dishPreview {
     border-radius: 8px;
     object-fit: cover;
+}
+
+@media (max-width: 880px) {
+    .menuSection {
+        padding-bottom: 40px;
+    }
+
+    .imageGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .imageCard {
+        height: 220px;
+    }
+
+    .categoryImage {
+        height: 100%;
+    }
+
+    .categoryLabel {
+        bottom: 16px;
+        left: 16px;
+        font-size: 22px !important;
+    }
+
+    .content {
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .label {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+
+    .title {
+        font-size: 36px !important;
+        margin-bottom: 0;
+    }
+
+    .filterRow {
+        display: flex;
+        overflow-x: auto;
+        gap: 16px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        scrollbar-width: none;
+        padding: 24px 0;
+    }
+
+    .filterButton {
+        white-space: nowrap;
+        font-size: 15px;
+    }
+
+    .listWrapper {
+        flex-direction: column-reverse;
+        gap: 24px;
+        align-items: center;
+    }
+
+    .dishPreview {
+        width: 100%;
+        max-width: 250px;
+        max-height: 200px;
+        border-radius: 12px;
+    }
+
+    .list {
+        gap: 24px;
+    }
+
+    .dishItem {
+        flex-direction: column;
+        gap: 4px;
+        align-items: center;
+    }
+
+    .dishItem span {
+        font-size: 22px;
+    }
 }

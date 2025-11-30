@@ -115,10 +115,18 @@ export default function MenuSection() {
                         label={t("button")}
                         variant="primary"
                         onAction={() => alert("abrir pdf com o cardapio clicavel")}
+                        className="hideMobile"
                     />
                 </div>
 
                 <div className={styles.listWrapper}>
+                    <Button
+                        label={t("button")}
+                        variant="primary"
+                        onAction={() => alert("abrir pdf com o cardapio clicavel")}
+                        className="hideDesktop"
+                    />
+                    
                     <div className={styles.list}>
                         {filteredDishes.map((dish) => (
                             <div

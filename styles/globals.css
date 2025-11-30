@@ -6,6 +6,7 @@
 
 body {
     background: #fff;
+    overflow-x: hidden;
 }
 
 .container {
@@ -13,6 +14,29 @@ body {
     padding: 0 24px;
     margin: auto;
     width: 100%;
+}
+
+.hideMobile {
+    display: block;
+}
+
+.hideDesktop {
+    display: none;
+}
+
+@media (max-width: 880px) {
+    .container {
+        max-width: 100% !important;
+        padding: 0 32px;
+    }
+
+    .hideMobile {
+        display: none;
+    }
+
+    .hideDesktop {
+        display: block;
+    }
 }
 
 :root {
@@ -43,8 +67,4 @@ body {
     --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.15);
     --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-html {
-    width: calc(100% + 24px);
 }
