@@ -1,0 +1,47 @@
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 120px 0;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 40px;
+        padding: 60px 0;
+    }
+}
+
+.imageWrapper {
+    flex: 1;
+    max-width: 300px;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Conteúdo textual */
+.textContent {
+    flex: 1;
+    max-width: 520px;
+}
+
+.label {
+    margin-bottom: 12px;
+    letter-spacing: 4px;
+}
+
+.title {
+    margin-bottom: 24px;
+    line-height: 1.15;
+}
+
+.paragraph {
+    margin-top: 12px;
+    line-height: 1.55;
+}

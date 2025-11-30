@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+}
+
+.container {
+    max-width: 880px;
+    padding: 0 24px;
+    margin: auto;
+    width: 100%;
+}
+
+:root {
+    /* Colors */
+    --color-primary: #880819;
+    --color-accent: #016833;
+    --color-text: #474747;
+    --color-background: #ffffff;
+    --color-muted: #f3f3f3;
+
+    /* Spacing Scale (Figma) */
+    --space-2xs: 4px;
+    --space-xs: 8px;
+    --space-sm: 12px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-2xl: 48px;
+    --space-3xl: 64px;
+
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 24px;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+html {
+    width: calc(100% + 24px);
+}

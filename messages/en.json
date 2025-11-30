@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "about": "About",
+    "menu": "Menu",
+    "contact": "Contact",
+    "book": "BOOK A TABLE"
+  },
+  "hero": {
+    "title": "The essence of everything",
+    "italian": "italian",
+    "subtitle": "Indulge in a gastronomic journey where every dish is a culinary masterpiece, crafted with ultra precision.",
+    "button": "Explore our menu"
+  },
+  "about": {
+    "section": "About us",
+    "title": "Experience Italy like never before.",
+    "description": "Tutto, meaning \"everything\" in Italian, embodies our restaurant's philosophy of delivering a complete, authentic Italian experience. More than just a name, Tutto represents our commitment to bringing you everything that makes Italian cuisine extraordinary."
+  },
+  "menu": {
+    "label": "Signatures",
+    "title": "Popular delights",
+    "button": "See all menu"
+  },
+  "special": {
+    "banner": "All heart. All flavor.",
+    "label": "SPECIAL MENU"
+  },
+  "footer": {
+    "visit": "VISIT US",
+    "address": "Via Santa Aurelia 128\nFlorence, Italy",
+    "contacts": "CONTACTS",
+    "phones": "+41 22 945 78 30 | +41 79 812 46 09",
+    "email": "EMAIL",
+    "emailAddress": "info@tuttoitalian.com",
+    "slogan": "tutto begins with flavor",
+    "copyright": "Copyright © Laís Resende"
+  }
+}

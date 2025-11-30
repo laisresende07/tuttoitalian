@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "about": "Über uns",
+    "menu": "Speisekarte",
+    "contact": "Kontakt",
+    "book": "TISCH RESERVIEREN"
+  },
+  "hero": {
+    "title": "Die Essenz von allem",
+    "italian": "italienisch",
+    "subtitle": "Begeben Sie sich auf eine gastronomische Reise, bei der jedes Gericht ein kulinarisches Meisterwerk ist, mit höchster Präzision zubereitet.",
+    "button": "Entdecken Sie unsere Speisekarte"
+  },
+  "about": {
+    "section": "Über uns",
+    "title": "Erleben Sie Italien wie nie zuvor.",
+    "description": "Tutto, italienisch für „alles“, verkörpert die Philosophie unseres Restaurants: ein authentisches und umfassendes italienisches Erlebnis zu bieten. Mehr als nur ein Name – Tutto steht für unser Engagement, Ihnen alles zu präsentieren, was die italienische Küche so außergewöhnlich macht."
+  },
+  "menu": {
+    "label": "Spezialitäten des Hauses",
+    "title": "Beliebte Köstlichkeiten",
+    "button": "Alle Menüs anzeigen"
+  },
+  "special": {
+    "banner": "Alles Herz. Aller Geschmack.",
+    "label": "SPEZIALMENÜ"
+  },
+  "footer": {
+    "visit": "BESUCHEN SIE UNS",
+    "address": "Via Santa Aurelia 128\nFlorenz, Italien",
+    "contacts": "KONTAKTE",
+    "phones": "+41 22 945 78 30 | +41 79 812 46 09",
+    "email": "E-MAIL",
+    "emailAddress": "info@tuttoitalian.com",
+    "slogan": "tutto beginnt mit Geschmack",
+    "copyright": "Copyright © Laís Resende"
+  }
+}

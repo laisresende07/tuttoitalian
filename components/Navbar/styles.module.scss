@@ -1,0 +1,96 @@
+.navbar {
+    width: 100%;
+    background-color: var(--color-background);
+    padding: 16px 8px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    transition: box-shadow 0.3s ease;
+}
+
+.navbarWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.bookButton {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .bookButton {
+        display: block;
+        text-decoration: none;
+        color: var(--color-primary);
+        align-items: center;
+        display: flex;
+        border-left: 1px solid var(--color-primary);
+        padding: 8px 16px;
+    }
+}
+
+.navLinks {
+    display: none;
+
+    button {
+        color: var(--color-accent);
+        text-decoration: none;
+        transition: color 0.3s ease;
+        position: relative;
+        display: inline-block;
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -4px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 1px;
+            background-color: var(--color-accent);
+            transition: width 0.3s ease;
+        }
+
+        &:hover::after {
+            width: 50%;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .navLinks {
+        display: flex;
+        list-style: none;
+        gap: 24px;
+        align-items: center;
+    }
+}
+
+.menuButton {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .menuButton {
+        display: none;
+    }
+}
