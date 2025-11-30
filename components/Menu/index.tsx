@@ -114,7 +114,12 @@ export default function MenuSection() {
                     <Button
                         label={t("button")}
                         variant="primary"
-                        onAction={() => alert("abrir pdf com o cardapio clicavel")}
+                        onAction={() =>
+                            window.open(
+                                "https://www.canva.com/design/DAG6MVM5FVE/ZsT3N59AWkfy42JP8R3ZIg/view?utm_content=DAG6MVM5FVE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h16ca60f5a6",
+                                "_blank"
+                            )
+                        }
                         className="hideMobile"
                     />
                 </div>
@@ -123,10 +128,15 @@ export default function MenuSection() {
                     <Button
                         label={t("button")}
                         variant="primary"
-                        onAction={() => alert("abrir pdf com o cardapio clicavel")}
+                        onAction={() =>
+                            window.open(
+                                "https://www.canva.com/design/DAG6MVM5FVE/ZsT3N59AWkfy42JP8R3ZIg/view?utm_content=DAG6MVM5FVE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h16ca60f5a6",
+                                "_blank"
+                            )
+                        }
                         className="hideDesktop"
                     />
-                    
+
                     <div className={styles.list}>
                         {filteredDishes.map((dish) => (
                             <div
